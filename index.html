@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>致杨道儒 - 我们五年二班的回忆</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 顶部横幅 */
+        .header {
+            background: linear-gradient(135deg, #e8f4f8, #f0f8fb);
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #4a5568;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 容器 */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        /* 回忆文字区 */
+        .memories {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .memories h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2d3748;
+            border-bottom: 2px solid #e8f4f8;
+            padding-bottom: 10px;
+        }
+
+        .memory-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #fef7fb;
+            border-radius: 8px;
+            border-left: 4px solid #9f7aea;
+        }
+
+        .memory-item h3 {
+            color: #4a5568;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .memory-item p {
+            color: #718096;
+            line-height: 1.8;
+        }
+
+        /* 留言区 */
+        .messages {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .messages h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2d3748;
+            border-bottom: 2px solid #e8f4f8;
+            padding-bottom: 10px;
+        }
+
+        .message-form {
+            margin-bottom: 30px;
+        }
+
+        /* 新增：署名输入框样式 */
+        .message-form .name-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .message-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            resize: vertical;
+            min-height: 120px;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .message-form button {
+            background: #4299e1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .message-form button:hover {
+            background: #3182ce;
+        }
+
+        .message-list {
+            margin-top: 20px;
+        }
+
+        .message-box {
+            padding: 15px;
+            background: #e8f4f8;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .message-author {
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 5px;
+        }
+
+        .message-text {
+            color: #4a5568;
+        }
+
+        .message-time {
+            font-size: 0.8rem;
+            color: #718096;
+            margin-top: 8px;
+            text-align: right;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2d3748;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .photo-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部横幅 -->
+    <header class="header">
+        <h1>致杨道儒- 我们永远的回忆</h1>
+        <p>虽然你转学去往了新的地方，但我们一起度过的时光，永远珍藏在心底</p>
+    </header>
+        <!-- 回忆文字区 -->
+        <section class="memories">
+            <h2>我们的独家回忆</h2>
+            <div class="memory-item">
+                <h3>第一次认识的场景</h3>
+                <p>还记得刚开学的时候，你坐在位置上，和我们打招呼。那时候就觉得你是个特别开朗的人，后来我们成了最好的朋友。</p>
+            </div>
+            <div class="memory-item">
+                <h3>想对你说的话</h3>
+                <p>虽然你转学了，但我们的友谊不会变。希望你在新的学校能认识更多好朋友，学习进步，每天都开开心心的。我们会一直想念你，也随时欢迎你回来看看！</p>
+            </div>
+            <!-- 可以复制memory-item添加更多回忆 -->
+        </section>
+
+        <!-- 留言区 -->
+        <section class="messages">
+            <h2>想对TA说的话</h2>
+            <div class="message-form">
+                <!-- 新增：署名输入框 -->
+                <input type="text" class="name-input" id="messageAuthor" placeholder="请输入你的名字（署名）">
+                <textarea placeholder="在这里写下你想对TA说的话..." id="messageContent"></textarea>
+                <button onclick="addMessage()">发送留言</button>
+            </div>
+            <div class="message-list" id="messageList">
+    <footer>
+        <p>制作于 2026 年 2 月 28日 | 致我们永远的朋友杨道儒</p>
+    </footer>
+
+    <script>
+        // 留言功能（新增了署名逻辑）
+        function addMessage() {
+            // 获取输入的署名和留言内容
+            const authorInput = document.getElementById('messageAuthor');
+            const contentInput = document.getElementById('messageContent');
+            
+            const authorName = authorInput.value.trim();
+            const messageText = contentInput.value.trim();
+            
+            // 验证输入
+            if (!authorName) {
+                alert('请输入你的名字作为署名！');
+                authorInput.focus();
+                return;
+            }
+            if (!messageText) {
+                alert('请输入想对TA说的话！');
+                contentInput.focus();
+                return;
+            }
+
+            // 创建新的留言元素
+            const messageBox = document.createElement('div');
+            messageBox.className = 'message-box';
+
+            // 留言者（使用自定义署名）
+            const author = document.createElement('div');
+            author.className = 'message-author';
+            author.textContent = authorName;
+
+            // 留言内容
+            const text = document.createElement('div');
+            text.className = 'message-text';
+            text.textContent = messageText;
+
+            // 留言时间
+            const time = document.createElement('div');
+            time.className = 'message-time';
+            const now = new Date();
+            // 优化时间显示：补全月份/日期的前导零
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const day = now.getDate().toString().padStart(2, '0');
+            const timeStr = now.getFullYear() + '年' + month + '月' + day + '日';
+            time.textContent = timeStr;
+
+            // 组装留言
+            messageBox.appendChild(author);
+            messageBox.appendChild(text);
+            messageBox.appendChild(time);
+
+            // 添加到留言列表（新增的留言显示在最前面）
+            const messageList = document.getElementById('messageList');
+            messageList.insertBefore(messageBox, messageList.firstChild);
+
+            // 清空输入框
+            authorInput.value = '';
+            contentInput.value = '';
+        }
+    </script>
+</body>
+</html>
